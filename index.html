@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang=en>
+<meta charset=utf-8>
+<meta content="width=device-width, initial-scale=1" name=viewport>
+<title>TechFixSoftware</title>
+<meta name=description content="Mary's simple recipe for maple bacon donuts makes a sticky, sweet treat with just a hint of salt that you'll keep coming back for.">
+<link rel=preconnect href=https://cdnjs.cloudflare.com crossorigin=anonymous>
+<link rel=dns-prefetch href=https://cdnjs.cloudflare.com>
+<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css rel=stylesheet crossorigin=anonymous integrity=sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH>
+<link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css rel=stylesheet>
+<link rel=stylesheet href=assets/css/style.css>
+
+ 
+<body>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#" style="font-size: 1.8rem; text-shadow: 2px 2px 4px #000; color: #d3d3d3;">TechFixSoftware</a>
+    </div>
+  </nav>
+
+<section class="hero-section" id="Home">
+  <div class="container h-100">
+      <div class="row h-100 align-items-center flex-column flex-lg-row">
+          
+          <!-- Hero Image Section -->
+          <div class="col-lg-6 col-md-6 order-first order-lg-last mb-4 mb-lg-0">
+              <div class="hero-image-container">
+                  <!-- Ensuring images are responsive and well-aligned -->
+                  <img src="img/logo.avif" alt="Cafe Atmosphere" class="hero-image img-1 w-85 mb-3" loading="eager">
+                  <img src="img/logo.avif" alt="Cafe Atmosphere" class="hero-image img-2 w-65" loading="eager">
+              </div>
+          </div>
+
+          <!-- Text Section -->
+          <div class="col-lg-6 col-md-6 text-center text-lg-start">
+              <h1 class="fw-bold mb-4 text-dark">
+                  <span class="tech">Welcome To <span style="background-color:linear-gradient(45deg, #25d366, #128C7E);">TechFixSoftware</span></span>
+              </h1>
+              <p class="welcome-text mb-4 text-dark fw-bold">
+                  <span style="color: #d3d3d3;  text-shadow: 2px 2px 4px #000;font-size: 1.8rem;">JASA REMOTE</span><br>
+                  <span style="color: #d3d3d3; text-shadow: 2px 2px 4px #000;">UBL, FLASHING, CUSTOM ROM WRITE IMEI DLL</span>
+              </p>
+              <a href="testi.html" class="btn btn-primary btn-lg" style=" text-transform: uppercase; height: 40%; font-size:1.1rem;">Lihat Testimoni</a>
+          </div>
+
+      </div>
+  </div>
+</section>
+
+<h1 class="text-center fw-bold">Paketan</h1>
+<div class="container py-4">
+<div class=row>
+<div class="col-6 col-md-3" id="Service">
+<a href=# class=product-card data-bs-toggle=modal data-bs-target=#productModal1>
+<div class=product-image><img src="img/logo.avif" alt="#" loading="eager"  /><span class=discount-badge>50% OFF</span></div>
+<div class=p-2>
+<div class=product-title>Jasa Rooting & Custom Rom</div>
+<div class=price>Rp 100.000</div>
+<div class=original-price>Rp 150.000</div>
+<div class="d-flex justify-content-between align-items-center mt-2">
+</div>
+</div>
+</a>
+</div>
+
+<!-- Modal Checkout -->
+<div class="modal fade" id="productModal1" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!-- Header Modal -->
+      <div class="modal-header border-0 bg-primary text-white">
+        <h5 class="modal-title">
+          <i class="fas fa-shopping-cart me-2"></i>Checkout
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Body Modal -->
+      <div class="modal-body p-4">
+        <div class="row g-4">
+          <!-- Product Preview -->
+          <div class="col-md-5">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="position-relative">
+                <img src="img/logo.avif" alt="Product Image" class="card-img-top">
+                <span class="badge bg-danger position-absolute top-0 end-0 m-3">50% OFF</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Jasa Rooting & Custom ROM</h5>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <div>
+                    <span class="h5 text-primary">Rp 100.000</span>
+                    <small class="text-muted text-decoration-line-through d-block">Rp 150.000</small>
+                  </div>
+                  <div class="rating">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star-half-alt text-warning"></i>
+                    <small class="text-muted ms-2">(4.5)</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Checkout Form -->
+          <div class="col-md-7">
+            <form class="needs-validation" novalidate>
+              <!-- Service Selection -->
+              <div class="mb-4">
+                <label class="form-label fw-bold">
+                  <i class="fas fa-tools me-2"></i>Pilih Layanan
+                </label>
+                <select class="form-select form-select-lg shadow-sm" id="serviceSelect2" onchange="updatePrice(2)" required>
+                  <option value="">Pilih Layanan</option>
+                  <option value="Root & Custom Rom">Root & Custom ROM</option>
+                </select>
+              </div>
+
+              <!-- Customer Details -->
+              <div class="mb-4">
+                <label class="form-label fw-bold">
+                  <i class="fas fa-user me-2"></i>Data Pelanggan
+                </label>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control shadow-sm" placeholder="Nama Lengkap" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label fw-bold">
+                  <i class="fas fa-mobile-alt me-2"></i>Informasi Device
+                </label>
+                <input type="text" class="form-control form-control-lg shadow-sm" 
+                    id="deviceName2" placeholder="(cth:Redmi Note 9)" required>
+              </div>
+
+              <!-- Deskripsi: Syarat dan Ketentuan -->
+              <div class="card mb-4" style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px;">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 18px; font-weight: bold;">Syarat dan Ketentuan:</h5>
+                  <p class="card-text" style="font-size: 14px; color: #555;">Memiliki Laptop/Komputer (Minimal Windows 7 SP1). Memiliki koneksi internet yang stabil, disarankan menggunakan Wifi. Kabel USB untuk HP Android atau iPhone. TeamViewer atau AnyDesk harus terinstall di laptop (bisa di-download gratis).</p>
+                  <p class="card-text" style="font-size: 14px; color: #555; font-weight: bold;">Garansi 100% atau Data Dikembalikan ke Posisi Awal Jika Tidak Berhasil</p>
+                </div>
+              </div>
+
+              <!-- Price Summary -->
+              <div class="card bg-light mb-4">
+                <div class="card-body">
+                  <h6 class="card-title mb-3">Ringkasan Pembayaran</h6>
+                  <div class="d-flex justify-content-between mb-2">
+                    <span>Harga Layanan</span>
+                    <span class="price-display fw-bold text-primary">Silahkan Pilih Layanan</span>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                    <span class="fw-bold">Total</span>
+                    <span class="fw-bold text-primary price-total">Rp 0</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Order Button -->
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-primary btn-lg" id="buyNowBtn2" onclick="sendOrderViaWhatsApp()">
+                  <i class="fab fa-whatsapp me-2"></i>Order via WhatsApp
+                </button>
+                <small class="text-center text-muted">
+                  <i class="fas fa-shield-alt me-1"></i>
+                  Pembayaran aman & terjamin
+                </small>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Card 2 -->
+<div class="col-6 col-md-3" id="Service">
+  <a href=# class=product-card data-bs-toggle=modal data-bs-target=#productModal2>
+    <div class=product-image><img src="img/logo.avif" alt="#" loading="eager"  /><span class=discount-badge>50% OFF</span></div>
+    <div class=p-2>
+      <div class=product-title>Jasa UBL & Pasang TWRP</div>
+      <div class=price>Rp 80.000</div>
+      <div class=original-price>Rp 140.000</div>
+      <div class="d-flex justify-content-between align-items-center mt-2">
+      </div>
+    </div>
+  </a>
+</div>
+
+
+<!-- Modal Checkout2 -->
+<div class="modal fade" id="productModal2" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!-- Header Modal -->
+      <div class="modal-header border-0 bg-primary text-white">
+        <h5 class="modal-title">
+          <i class="fas fa-shopping-cart me-2"></i>Checkout
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Body Modal -->
+      <div class="modal-body p-4">
+        <div class="row g-4">
+          <!-- Product Preview -->
+          <div class="col-md-5">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="position-relative">
+                <img src="img/logo.avif" alt="Product Image" class="card-img-top">
+                <span class="badge bg-danger position-absolute top-0 end-0 m-3">20% OFF</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Jasa Rooting & Custom ROM</h5>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <div>
+                    <span class="h5 text-primary">Rp 80.000</span>
+                    <small class="text-muted text-decoration-line-through d-block">Rp 140.000</small>
+                  </div>
+                  <div class="rating">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star-half-alt text-warning"></i>
+                    <small class="text-muted ms-2">(4.5)</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Checkout Form -->
+          <div class="col-md-7">
+            <form class="needs-validation" novalidate>
+              <!-- Service Selection -->
+              <div class="mb-4">
+                <label class="form-label fw-bold">
+                  <i class="fas fa-tools me-2"></i>Pilih Layanan
+                </label>
+                <select class="form-select form-select-lg shadow-sm" id="serviceSelect2" onchange="updatePrice(2)" required>
+                  <option value="">Pilih Layanan</option>
+                  <option value="Jasa UBL & Pasang TWRP">UBL & Pasang TWRP</option>
+                </select>
+              </div>
+
+              <!-- Customer Details -->
+              <div class="mb-4">
+                <label class="form-label fw-bold">
+                  <i class="fas fa-user me-2"></i>Data Pelanggan
+                </label>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control shadow-sm" placeholder="Nama Lengkap" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label fw-bold">
+                  <i class="fas fa-mobile-alt me-2"></i>Informasi Device
+                </label>
+                <input type="text" class="form-control form-control-lg shadow-sm" 
+                    id="deviceName2" placeholder="(cth:Redmi Note 9)" required>
+              </div>
+
+              <!-- Deskripsi: Syarat dan Ketentuan -->
+              <div class="card mb-4" style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px;">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 18px; font-weight: bold;">Syarat dan Ketentuan:</h5>
+                  <p class="card-text" style="font-size: 14px; color: #555;">Memiliki Laptop/Komputer (Minimal Windows 7 SP1). Memiliki koneksi internet yang stabil, disarankan menggunakan Wifi. Kabel USB untuk HP Android atau iPhone. TeamViewer atau AnyDesk harus terinstall di laptop (bisa di-download gratis).</p>
+                  <p class="card-text" style="font-size: 14px; color: #555; font-weight: bold;">Garansi 100% atau Data Dikembalikan ke Posisi Awal Jika Tidak Berhasil</p>
+                </div>
+              </div>
+
+              <!-- Price Summary -->
+              <div class="card bg-light mb-4">
+                <div class="card-body">
+                  <h6 class="card-title mb-3">Ringkasan Pembayaran</h6>
+                  <div class="d-flex justify-content-between mb-2">
+                    <span>Harga Layanan</span>
+                    <span class="price-display fw-bold text-primary">Silahkan Pilih Layanan</span>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                    <span class="fw-bold">Total</span>
+                    <span class="fw-bold text-primary price-total">Rp 0</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Order Button -->
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-primary btn-lg" id="buyNowBtn2" onclick="sendOrderViaWhatsApp()">
+                  <i class="fab fa-whatsapp me-2"></i>Order via WhatsApp
+                </button>
+                <small class="text-center text-muted">
+                  <i class="fas fa-shield-alt me-1"></i>
+                  Pembayaran aman & terjamin
+                </small>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <!-- card3 -->
+
+<div class="col-6 col-md-3" id=Service>
+<a href=# class=product-card data-bs-toggle=modal data-bs-target=#productModal3>
+<div class=product-image><img src="img/logo.avif" alt=# loading="eager"/><span class=discount-badge>50% OFF</span></div>
+<div class=p-2>
+<div class=product-title>Jasa Write Imei Android</div>
+<div class=price>Rp 180.000</div>
+<div class=original-price>Rp 240.000</div>
+<div class="d-flex justify-content-between align-items-center mt-2">
+ 
+</div>
+</div>
+</a>
+</div>
+
+<div class="modal fade" id="productModal3" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!-- Header Modal -->
+      <div class="modal-header border-0 bg-primary text-white">
+        <h5 class="modal-title">
+          <i class="fas fa-shopping-cart me-2"></i>Checkout
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Body Modal -->
+      <div class="modal-body p-4">
+        <div class="row g-4">
+          <!-- Product Preview -->
+          <div class="col-md-5">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="position-relative">
+                <img src="img/logo.avif" alt="Product Image" class="card-img-top">
+                <span class="badge bg-danger position-absolute top-0 end-0 m-3">20% OFF</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Jasa Rooting & Custom ROM</h5>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <div>
+                    <span class="h5 text-primary">Rp 180.000</span>
+                    <small class="text-muted text-decoration-line-through d-block">Rp 240.000</small>
+                  </div>
+                  <div class="rating">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star-half-alt text-warning"></i>
+                    <small class="text-muted ms-2">(4.5)</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Checkout Form -->
+          <div class="col-md-7">
+            <form class="needs-validation" novalidate>
+              <!-- Service Selection -->
+              <div class="mb-4">
+                <label class="form-label fw-bold">
+                  <i class="fas fa-tools me-2"></i>Pilih Layanan
+                </label>
+                <select class="form-select form-select-lg shadow-sm" id="serviceSelect2" onchange="updatePrice(2)" required>
+                  <option value="">Pilih Layanan</option>
+                  <option value="Jasa Write Imei Android">Write Imei Android</option>
+                </select>
+              </div>
+
+              <!-- Customer Details -->
+              <div class="mb-4">
+                <label class="form-label fw-bold">
+                  <i class="fas fa-user me-2"></i>Data Pelanggan
+                </label>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control shadow-sm" placeholder="Nama Lengkap" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label fw-bold">
+                  <i class="fas fa-mobile-alt me-2"></i>Informasi Device
+                </label>
+                <input type="text" class="form-control form-control-lg shadow-sm" 
+                    id="deviceName2" placeholder="(cth:Redmi Note 9)" required>
+              </div>
+
+              <!-- Deskripsi: Syarat dan Ketentuan -->
+              <div class="card mb-4" style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px;">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 18px; font-weight: bold;">Syarat dan Ketentuan:</h5>
+                  <p class="card-text" style="font-size: 14px; color: #555;">Memiliki Laptop/Komputer (Minimal Windows 7 SP1). Memiliki koneksi internet yang stabil, disarankan menggunakan Wifi. Kabel USB untuk HP Android atau iPhone. TeamViewer atau AnyDesk harus terinstall di laptop (bisa di-download gratis).</p>
+                  <p class="card-text" style="font-size: 14px; color: #555; font-weight: bold;">Garansi 100% atau Data Dikembalikan ke Posisi Awal Jika Tidak Berhasil</p>
+                </div>
+              </div>
+
+              <!-- Price Summary -->
+              <div class="card bg-light mb-4">
+                <div class="card-body">
+                  <h6 class="card-title mb-3">Ringkasan Pembayaran</h6>
+                  <div class="d-flex justify-content-between mb-2">
+                    <span>Harga Layanan</span>
+                    <span class="price-display fw-bold text-primary">Silahkan Pilih Layanan</span>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                    <span class="fw-bold">Total</span>
+                    <span class="fw-bold text-primary price-total">Rp 0</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Order Button -->
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-primary btn-lg" id="buyNowBtn2" onclick="sendOrderViaWhatsApp()">
+                  <i class="fab fa-whatsapp me-2"></i>Order via WhatsApp
+                </button>
+                <small class="text-center text-muted">
+                  <i class="fas fa-shield-alt me-1"></i>
+                  Pembayaran aman & terjamin
+                </small>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- card4 -->
+<div class="col-6 col-md-3" id=Service>
+<a href=# class=product-card data-bs-toggle=modal data-bs-target=#productModal4>
+<div class=product-image><img src="img/logo.avif" alt="#" loading="eager" /><span class=discount-badge>50% OFF</span></div>
+<div class=p-2>
+<div class=product-title>Jasa Rooting & Custom Rom (Offline)</div>
+<div class=price>Rp 150.000</div>
+<div class=original-price>Rp 200.000</div>
+<div class="d-flex justify-content-between align-items-center mt-2">
+</div>
+</div>
+</a>
+</div>
+
+
+
+<div class="modal fade" id="productModal4" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!-- Header Modal -->
+      <div class="modal-header border-0 bg-primary text-white">
+        <h5 class="modal-title">
+          <i class="fas fa-shopping-cart me-2"></i>Checkout
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Body Modal -->
+      <div class="modal-body p-4">
+        <div class="row g-4">
+          <!-- Product Preview -->
+          <div class="col-md-5">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="position-relative">
+                <img src="img/logo.avif" alt="Product Image" class="card-img-top">
+                <span class="badge bg-danger position-absolute top-0 end-0 m-3">20% OFF</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Jasa Rooting & Custom Rom (Offline)</h5>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <div>
+                    <span class="h5 text-primary">Rp 150.000</span>
+                    <small class="text-muted text-decoration-line-through d-block">Rp 200.000</small>
+                  </div>
+                  <div class="rating">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star-half-alt text-warning"></i>
+                    <small class="text-muted ms-2">(4.5)</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Checkout Form -->
+          <div class="col-md-7">
+            <form class="needs-validation" novalidate>
+              <!-- Service Selection -->
+              <div class="mb-4">
+                <label class="form-label fw-bold">
+                  <i class="fas fa-tools me-2"></i>Pilih Layanan
+                </label>
+                <select class="form-select form-select-lg shadow-sm" id="serviceSelect2" onchange="updatePrice(2)" required>
+                  <option value="">Pilih Layanan</option>
+                  <option value="Rooting & Custom Rom (Offline)">Rooting & Custom Rom (Offline)</option>
+                </select>
+              </div>
+
+              <!-- Customer Details -->
+              <div class="mb-4">
+                <label class="form-label fw-bold">
+                  <i class="fas fa-user me-2"></i>Data Pelanggan
+                </label>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control shadow-sm" placeholder="Nama Lengkap" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label fw-bold">
+                  <i class="fas fa-mobile-alt me-2"></i>Informasi Device
+                </label>
+                <input type="text" class="form-control form-control-lg shadow-sm" 
+                    id="deviceName2" placeholder="(cth:Redmi Note 9)" required>
+              </div>
+
+              <!-- Deskripsi: Syarat dan Ketentuan -->
+              <div class="card mb-4" style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px;">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 18px; font-weight: bold;">Syarat dan Ketentuan:</h5>
+                  <p class="card-text" style="font-size: 14px; color: #555;">Memiliki Laptop/Komputer (Minimal Windows 7 SP1). Memiliki koneksi internet yang stabil, disarankan menggunakan Wifi. Kabel USB untuk HP Android atau iPhone. TeamViewer atau AnyDesk harus terinstall di laptop (bisa di-download gratis).</p>
+                  <p class="card-text" style="font-size: 14px; color: #555; font-weight: bold;">Garansi 100% atau Data Dikembalikan ke Posisi Awal Jika Tidak Berhasil</p>
+                </div>
+              </div>
+
+              <!-- Price Summary -->
+              <div class="card bg-light mb-4">
+                <div class="card-body">
+                  <h6 class="card-title mb-3">Ringkasan Pembayaran</h6>
+                  <div class="d-flex justify-content-between mb-2">
+                    <span>Harga Layanan</span>
+                    <span class="price-display fw-bold text-primary">Silahkan Pilih Layanan</span>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                    <span class="fw-bold">Total</span>
+                    <span class="fw-bold text-primary price-total">Rp 0</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Order Button -->
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-primary btn-lg" id="buyNowBtn2" onclick="sendOrderViaWhatsApp()">
+                  <i class="fab fa-whatsapp me-2"></i>Order via WhatsApp
+                </button>
+                <small class="text-center text-muted">
+                  <i class="fas fa-shield-alt me-1"></i>
+                  Pembayaran aman & terjamin
+                </small>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<h1 class="text-center">Eceran </h1>
+
+  <div class="col-6 col-md-3" id=Service>
+  <a href=# class=product-card data-bs-toggle=modal data-bs-target=#productModal5>
+  <div class=product-image><img src="img/logo.avif" alt=# loading="eager" /><span class=discount-badge>20% OFF</span></div>
+  <div class=p-2>
+  <div class=product-title>Jasa UBL</div>
+  <div class=price>Rp 40.000 </div>
+  <div class=original-price>Rp 60.000</div>
+  <div class="d-flex justify-content-between align-items-center mt-2">
+  </div>
+  </div>
+  </a>
+  </div>
+
+  <div class="modal fade" id="productModal5" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- Header Modal -->
+        <div class="modal-header border-0 bg-primary text-white">
+          <h5 class="modal-title" id="productModalLabel">
+            <i class="fas fa-shopping-cart me-2"></i>Checkout
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+        <!-- Body Modal -->
+        <div class="modal-body p-4">
+          <div class="row g-4">
+            <!-- Product Preview -->
+            <div class="col-md-5">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="position-relative">
+                  <img src="img/logo.avif" alt="Product Image" class="card-img-top rounded">
+                  <span class="badge bg-danger position-absolute top-0 end-0 m-3">20% OFF</span>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Jasa ubl</h5>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div>
+                      <span class="h5 text-primary">Rp 40.000</span>
+                      <small class="text-muted text-decoration-line-through d-block">Rp 60.000</small>
+                    </div>
+                    <div class="rating">
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star-half-alt text-warning"></i>
+                      <small class="text-muted ms-2">(4.5)</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Checkout Form -->
+            <div class="col-md-7">
+              <form class="needs-validation" novalidate>
+                <!-- Service Selection -->
+                <div class="mb-4">
+                  <label class="form-label fw-bold">
+                    <i class="fas fa-tools me-2"></i>Pilih Layanan
+                  </label>
+                  <select class="form-select form-select-lg shadow-sm" id="serviceSelect2" onchange="updatePrice(2)" required>
+                    <option value="">Pilih Layanan</option>
+                    <option value="UBL">UBL</option>
+                  </select>
+                </div>
+  
+                <!-- Customer Details -->
+                <div class="mb-4">
+                  <label class="form-label fw-bold">
+                    <i class="fas fa-user me-2"></i>Data Pelanggan
+                  </label>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control shadow-sm" placeholder="Nama Lengkap" required>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="mb-4">
+                  <label class="form-label fw-bold">
+                    <i class="fas fa-mobile-alt me-2"></i>Informasi Device
+                  </label>
+                  <input type="text" class="form-control form-control-lg shadow-sm" 
+                      id="deviceName2" placeholder="(cth: Redmi Note 9)" required>
+                </div>
+  
+                <!-- Syarat dan Ketentuan -->
+                <div class="card mb-4 border-1" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                  <div class="card-body">
+                    <h5 class="card-title">Syarat dan Ketentuan:</h5>
+                    <p class="card-text text-muted">Memiliki Laptop/Komputer (Minimal Windows 7 SP1). Memiliki koneksi internet yang stabil, disarankan menggunakan Wifi. Kabel USB untuk HP Android atau iPhone. TeamViewer atau AnyDesk harus terinstall di laptop (bisa di-download gratis).</p>
+                    <p class="card-text fw-bold text-muted">Garansi 100% atau Data Dikembalikan ke Posisi Awal Jika Tidak Berhasil</p>
+                  </div>
+                </div>
+  
+                <!-- Price Summary -->
+                <div class="card bg-light mb-4">
+                  <div class="card-body">
+                    <h6 class="card-title mb-3">Ringkasan Pembayaran</h6>
+                    <div class="d-flex justify-content-between mb-2">
+                      <span>Harga Layanan</span>
+                      <span class="price-display fw-bold text-primary">Silahkan Pilih Layanan</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                      <span class="fw-bold">Total</span>
+                      <span class="fw-bold text-primary price-total">Rp 0</span>
+                    </div>
+                  </div>
+                </div>
+  
+                <!-- Order Button -->
+                <div class="d-grid gap-2">
+                  <button type="button" class="btn btn-primary btn-lg" id="buyNowBtn2" onclick="sendOrderViaWhatsApp()">
+                    <i class="fab fa-whatsapp me-2"></i>Order via WhatsApp
+                  </button>
+                  <small class="text-center text-muted">
+                    <i class="fas fa-shield-alt me-1"></i>
+                    Pembayaran aman & terjamin
+                  </small>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <div class="col-6 col-md-3" id=Service>
+    <a href=# class=product-card data-bs-toggle=modal data-bs-target=#productModal6>
+    <div class=product-image><img src="img/logo.avif" alt=# loading="eager" /><span class=discount-badge>50% OFF</span></div>
+    <div class=p-2>
+    <div class=product-title>Jasa Pasang TWRP</div>
+    <div class=price>Rp 35.000</div>
+    <div class=original-price>Rp 60.000</div>
+    <div class="d-flex justify-content-between align-items-center mt-2">
+    </div>
+    </div>
+    </a>
+    </div>
+
+    <div class="modal fade" id="productModal6" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Header Modal -->
+          <div class="modal-header border-0 bg-primary text-white">
+            <h5 class="modal-title" id="productModalLabel">
+              <i class="fas fa-shopping-cart me-2"></i>Checkout
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <!-- Body Modal -->
+          <div class="modal-body p-4">
+            <div class="row g-4">
+              <!-- Product Preview -->
+              <div class="col-md-5">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="position-relative">
+                    <img src="img/logo.avif" alt="Product Image" class="card-img-top rounded">
+                    <span class="badge bg-danger position-absolute top-0 end-0 m-3">20% OFF</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Jasa Pasang TWRP</h5>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                      <div>
+                        <span class="h5 text-primary">Rp 40.000</span>
+                        <small class="text-muted text-decoration-line-through d-block">Rp 60.000</small>
+                      </div>
+                      <div class="rating">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                        <small class="text-muted ms-2">(4.5)</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <!-- Checkout Form -->
+              <div class="col-md-7">
+                <form class="needs-validation" novalidate>
+                  <!-- Service Selection -->
+                  <div class="mb-4">
+                    <label class="form-label fw-bold">
+                      <i class="fas fa-tools me-2"></i>Pilih Layanan
+                    </label>
+                    <select class="form-select form-select-lg shadow-sm" id="serviceSelect2" onchange="updatePrice(2)" required>
+                      <option value="">Pilih Layanan</option>
+                      <option value="Pasang TWRP">Pasang TWRP</option>
+                    </select>
+                  </div>
+    
+                  <!-- Customer Details -->
+                  <div class="mb-4">
+                    <label class="form-label fw-bold">
+                      <i class="fas fa-user me-2"></i>Data Pelanggan
+                    </label>
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <input type="text" class="form-control shadow-sm" placeholder="Nama Lengkap" required>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="mb-4">
+                    <label class="form-label fw-bold">
+                      <i class="fas fa-mobile-alt me-2"></i>Informasi Device
+                    </label>
+                    <input type="text" class="form-control form-control-lg shadow-sm" 
+                        id="deviceName2" placeholder="(cth: Redmi Note 9)" required>
+                  </div>
+    
+                  <!-- Syarat dan Ketentuan -->
+                  <div class="card mb-4 border-1" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <div class="card-body">
+                      <h5 class="card-title">Syarat dan Ketentuan:</h5>
+                      <p class="card-text text-muted">Memiliki Laptop/Komputer (Minimal Windows 7 SP1). Memiliki koneksi internet yang stabil, disarankan menggunakan Wifi. Kabel USB untuk HP Android atau iPhone. TeamViewer atau AnyDesk harus terinstall di laptop (bisa di-download gratis).</p>
+                      <p class="card-text fw-bold text-muted">Garansi 100% atau Data Dikembalikan ke Posisi Awal Jika Tidak Berhasil</p>
+                    </div>
+                  </div>
+    
+                  <!-- Price Summary -->
+                  <div class="card bg-light mb-4">
+                    <div class="card-body">
+                      <h6 class="card-title mb-3">Ringkasan Pembayaran</h6>
+                      <div class="d-flex justify-content-between mb-2">
+                        <span>Harga Layanan</span>
+                        <span class="price-display fw-bold text-primary">Silahkan Pilih Layanan</span>
+                      </div>
+                      <hr>
+                      <div class="d-flex justify-content-between">
+                        <span class="fw-bold">Total</span>
+                        <span class="fw-bold text-primary price-total">Rp 0</span>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- Order Button -->
+                  <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-primary btn-lg" id="buyNowBtn2" onclick="sendOrderViaWhatsApp()">
+                      <i class="fab fa-whatsapp me-2"></i>Order via WhatsApp
+                    </button>
+                    <small class="text-center text-muted">
+                      <i class="fas fa-shield-alt me-1"></i>
+                      Pembayaran aman & terjamin
+                    </small>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="col-6 col-md-3" id=Service>
+      <a href=# class=product-card data-bs-toggle=modal data-bs-target=#productModal7>
+      <div class=product-image><img src="img/logo.avif" alt=# loading="eager" /><span class=discount-badge>50% OFF</span></div>
+      <div class=p-2>
+      <div class=product-title>Jasa custom ROM</div>
+      <div class=price>Rp 80.000</div>
+      <div class=original-price>Rp 100.000</div>
+      <div class="d-flex justify-content-between align-items-center mt-2">
+     
+      </div>
+      </div>
+      </a>
+      </div>
+
+      <div class="modal fade" id="productModal7" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Header Modal -->
+            <div class="modal-header border-0 bg-primary text-white">
+              <h5 class="modal-title" id="productModalLabel">
+                <i class="fas fa-shopping-cart me-2"></i>Checkout
+              </h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+      
+            <!-- Body Modal -->
+            <div class="modal-body p-4">
+              <div class="row g-4">
+                <!-- Product Preview -->
+                <div class="col-md-5">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                      <img src="img/logo.avif" alt="Product Image" class="card-img-top rounded">
+                      <span class="badge bg-danger position-absolute top-0 end-0 m-3">20% OFF</span>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Jasa Custom ROM</h5>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div>
+                          <span class="h5 text-primary">Rp 40.000</span>
+                          <small class="text-muted text-decoration-line-through d-block">Rp 60.000</small>
+                        </div>
+                        <div class="rating">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                          <small class="text-muted ms-2">(4.5)</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- Checkout Form -->
+                <div class="col-md-7">
+                  <form class="needs-validation" novalidate>
+                    <!-- Service Selection -->
+                    <div class="mb-4">
+                      <label class="form-label fw-bold">
+                        <i class="fas fa-tools me-2"></i>Pilih Layanan
+                      </label>
+                      <select class="form-select form-select-lg shadow-sm" id="serviceSelect2" onchange="updatePrice(2)" required>
+                        <option value="">Pilih Layanan</option>
+                        <option value="Custom ROM">Custom ROM</option>
+                      </select>
+                    </div>
+      
+                    <!-- Customer Details -->
+                    <div class="mb-4">
+                      <label class="form-label fw-bold">
+                        <i class="fas fa-user me-2"></i>Data Pelanggan
+                      </label>
+                      <div class="row g-3">
+                        <div class="col-md-6">
+                          <input type="text" class="form-control shadow-sm" placeholder="Nama Lengkap" required>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="mb-4">
+                      <label class="form-label fw-bold">
+                        <i class="fas fa-mobile-alt me-2"></i>Informasi Device
+                      </label>
+                      <input type="text" class="form-control form-control-lg shadow-sm" 
+                          id="deviceName2" placeholder="(cth: Redmi Note 9)" required>
+                    </div>
+      
+                    <!-- Syarat dan Ketentuan -->
+                    <div class="card mb-4 border-1" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                      <div class="card-body">
+                        <h5 class="card-title">Syarat dan Ketentuan:</h5>
+                        <p class="card-text text-muted">Memiliki Laptop/Komputer (Minimal Windows 7 SP1). Memiliki koneksi internet yang stabil, disarankan menggunakan Wifi. Kabel USB untuk HP Android atau iPhone. TeamViewer atau AnyDesk harus terinstall di laptop (bisa di-download gratis).</p>
+                        <p class="card-text fw-bold text-muted">Garansi 100% atau Data Dikembalikan ke Posisi Awal Jika Tidak Berhasil</p>
+                      </div>
+                    </div>
+      
+                    <!-- Price Summary -->
+                    <div class="card bg-light mb-4">
+                      <div class="card-body">
+                        <h6 class="card-title mb-3">Ringkasan Pembayaran</h6>
+                        <div class="d-flex justify-content-between mb-2">
+                          <span>Harga Layanan</span>
+                          <span class="price-display fw-bold text-primary">Silahkan Pilih Layanan</span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                          <span class="fw-bold">Total</span>
+                          <span class="fw-bold text-primary price-total">Rp 0</span>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <!-- Order Button -->
+                    <div class="d-grid gap-2">
+                      <button type="button" class="btn btn-primary btn-lg" id="buyNowBtn2" onclick="sendOrderViaWhatsApp()">
+                        <i class="fab fa-whatsapp me-2"></i>Order via WhatsApp
+                      </button>
+                      <small class="text-center text-muted">
+                        <i class="fas fa-shield-alt me-1"></i>
+                        Pembayaran aman & terjamin
+                      </small>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+        <div class="col-6 col-md-3" id=Service>
+          <a href=# class=product-card data-bs-toggle=modal data-bs-target=#productModal8>
+          <div class=product-image><img src="img/logo.avif" alt=# loading="eager" /><span class=discount-badge>50% OFF</span></div>
+          <div class=p-2>
+          <div class=product-title>Jasa Flashing(Unbrick)</div>
+          <h6>(Tergantung Device)</h6>
+          <div class=price>Rp 80.000-160.000</div>
+          <div class=original-price>Rp 240.000</div>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+          </div>
+          </div>
+          </a>
+          </div>
+    
+          <div class="modal fade" id="productModal8" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <!-- Header Modal -->
+                <div class="modal-header border-0 bg-primary text-white">
+                  <h5 class="modal-title" id="productModalLabel">
+                    <i class="fas fa-shopping-cart me-2"></i>Checkout
+                  </h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+          
+                <!-- Body Modal -->
+                <div class="modal-body p-4">
+                  <div class="row g-4">
+                    <!-- Product Preview -->
+                    <div class="col-md-5">
+                      <div class="card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                          <img src="img/logo.avif" alt="Product Image" class="card-img-top rounded">
+                          <span class="badge bg-danger position-absolute top-0 end-0 m-3">20% OFF</span>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Jasa Flashing(Unbrick)</h5>
+                          <div class="d-flex justify-content-between align-items-center mt-3">
+                            <div>
+                              <span class="h5 text-primary">Rp 40.000</span>
+                              <small class="text-muted text-decoration-line-through d-block">Rp 60.000</small>
+                            </div>
+                            <div class="rating">
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star-half-alt text-warning"></i>
+                              <small class="text-muted ms-2">(4.5)</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- Checkout Form -->
+                    <div class="col-md-7">
+                      <form class="needs-validation" novalidate>
+                        <!-- Service Selection -->
+                        <div class="mb-4">
+                          <label class="form-label fw-bold">
+                            <i class="fas fa-tools me-2"></i>Pilih Layanan
+                          </label>
+                          <select class="form-select form-select-lg shadow-sm" id="serviceSelect2" onchange="updatePrice(2)" required>
+                            <option value="">Pilih Layanan</option>
+                            <option value="flashing">Flashing (Unbrick)</option>
+                          </select>
+                        </div>
+          
+                        <!-- Customer Details -->
+                        <div class="mb-4">
+                          <label class="form-label fw-bold">
+                            <i class="fas fa-user me-2"></i>Data Pelanggan
+                          </label>
+                          <div class="row g-3">
+                            <div class="col-md-6">
+                              <input type="text" class="form-control shadow-sm" placeholder="Nama Lengkap" required>
+                            </div>
+                          </div>
+                        </div>
+          
+                        <div class="mb-4">
+                          <label class="form-label fw-bold">
+                            <i class="fas fa-mobile-alt me-2"></i>Informasi Device
+                          </label>
+                          <input type="text" class="form-control form-control-lg shadow-sm" 
+                              id="deviceName2" placeholder="(cth: Redmi Note 9)" required>
+                        </div>
+          
+                        <!-- Syarat dan Ketentuan -->
+                        <div class="card mb-4 border-1" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                          <div class="card-body">
+                            <h5 class="card-title">Syarat dan Ketentuan:</h5>
+                            <p class="card-text text-muted">Memiliki Laptop/Komputer (Minimal Windows 7 SP1). Memiliki koneksi internet yang stabil, disarankan menggunakan Wifi. Kabel USB untuk HP Android atau iPhone. TeamViewer atau AnyDesk harus terinstall di laptop (bisa di-download gratis).</p>
+                            <p class="card-text fw-bold text-muted">Garansi 100% atau Data Dikembalikan ke Posisi Awal Jika Tidak Berhasil</p>
+                          </div>
+                        </div>
+          
+                        <!-- Price Summary -->
+                        <div class="card bg-light mb-4">
+                          <div class="card-body">
+                            <h6 class="card-title mb-3">Ringkasan Pembayaran</h6>
+                            <div class="d-flex justify-content-between mb-2">
+                              <span>Harga Layanan</span>
+                              <span class="price-display fw-bold text-primary">Silahkan Pilih Layanan</span>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                              <span class="fw-bold">Total</span>
+                              <span class="fw-bold text-primary price-total">Rp 0</span>
+                            </div>
+                          </div>
+                        </div>
+          
+                        <!-- Order Button -->
+                        <div class="d-grid gap-2">
+                          <button type="button" class="btn btn-primary btn-lg" id="buyNowBtn2" onclick="sendOrderViaWhatsApp()">
+                            <i class="fab fa-whatsapp me-2"></i>Order via WhatsApp
+                          </button>
+                          <small class="text-center text-muted">
+                            <i class="fas fa-shield-alt me-1"></i>
+                            Pembayaran aman & terjamin
+                          </small>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+
+        <div class="d-flex justify-content-center align-items-center min-vh-80 mt-4 p-5">
+          <div class="card shadow-sm p-4 text-center" id="deviceCheckerCard">
+              <P>Note:Masih dalam tahap pengetesan</P>
+              <h2 class="mb-4" id="CekDevices">Cek Root & Custom ROM Support</h2>
+  
+              <form id="deviceForm">
+                  <!-- Input untuk menulis jenis perangkat -->
+                  <div class="mb-3">
+                      <label for="deviceInput" class="form-label">Masukkan Nama Perangkat Anda</label>
+                      
+                      <input type="text" class="form-control" id="deviceInput" placeholder="Cth:REDMINOTE9" required>
+                  </div>
+  
+                  <button type="button" class="btn btn-primary w-100" onclick="checkDeviceSupport()">Cek
+                      Kompatibilitas</button>
+              </form>
+  
+              <div class="mt-3" id="notification" style="display:none;"></div>
+              <div id="result" class="mt-4"></div>
+          </div>
+      </div>
+
+
+
+<div class=faq-container>
+<div class=faq-item onclick=toggleFAQ(this)>
+<div class=faq-question><span>Pertanyaan 1: Berapa harga jasa flashing?</span><span>&#x25BC;</span></div>
+<div class=faq-answer>
+<p>Harga untuk jasa flashing bervariasi tergantung pada jenis perangkat dan kompleksitas layanan. Harga mulai dari <strong>Rp 35.000 hingga Rp 150.000</strong>. Untuk mendapatkan penawaran khusus atau mengetahui harga yang lebih tepat sesuai dengan perangkat Anda, silakan hubungi tim kami melalui form kontak atau langsung telepon.</p>
+</div>
+</div>
+<div class=faq-item onclick=toggleFAQ(this)>
+<div class=faq-question><span>Pertanyaan 2: Mengapa saya harus menggunakan jasa flashing di sini?</span><span>&#x25BC;</span></div>
+<div class=faq-answer>
+<p>Kami memiliki pengalaman bertahun-tahun dalam melakukan flashing berbagai jenis perangkat, baik smartphone, tablet, maupun perangkat lainnya. Tim kami terlatih dengan menggunakan alat dan perangkat lunak terbaru untuk memastikan hasil terbaik tanpa merusak perangkat Anda. Kami juga menyediakan layanan pelanggan yang responsif untuk memberikan solusi yang tepat sesuai kebutuhan Anda.</p>
+</div>
+</div>
+<div class=faq-item onclick=toggleFAQ(this)>
+<div class=faq-question><span>Pertanyaan 3: Apakah ada garansi untuk jasa flashing?</span><span>&#x25BC;</span></div>
+<div class=faq-answer>
+<p>Ya, kami memberikan <strong>garansi 100%</strong> untuk semua layanan flashing yang kami lakukan. Jika setelah proses flashing ada masalah atau perangkat Anda mengalami kendala, kami siap membantu untuk memperbaikinya tanpa biaya tambahan selama dalam masa garansi.</p>
+</div>
+</div>
+<div class=faq-item onclick=toggleFAQ(this)>
+<div class=faq-question><span>Pertanyaan 4: Berapa lama waktu yang dibutuhkan untuk proses flashing?</span><span>&#x25BC;</span></div>
+<div class=faq-answer>
+<p>Proses flashing biasanya memakan waktu antara <strong>10 hingga 30 menit</strong>, tergantung pada jenis perangkat dan kompleksitas proses flashing. Kami berusaha agar proses berjalan secepat mungkin tanpa mengurangi kualitas layanan.</p>
+</div>
+</div>
+<div class=faq-item onclick=toggleFAQ(this)>
+<div class=faq-question><span>Pertanyaan 5: Apa itu layanan root offline?</span><span>&#x25BC;</span></div>
+<div class=faq-answer>
+<p>Layanan <strong>root offline</strong> adalah proses yang memungkinkan Anda untuk mendapatkan akses penuh (root) pada perangkat Android Anda tanpa perlu koneksi internet aktif selama proses rooting. Dengan root, Anda dapat mengakses fitur dan kontrol penuh pada perangkat Anda yang tidak tersedia pada pengaturan standar.</p>
+</div>
+</div>
+<div class=faq-item onclick=toggleFAQ(this)>
+<div class=faq-question><span>Pertanyaan 6: Apa saja persyaratan untuk menggunakan layanan root offline?</span><span>&#x25BC;</span></div>
+<div class=faq-answer>
+<p>Untuk menggunakan layanan root offline, berikut adalah persyaratannya:</p>
+<ul>
+  <li>Perangkat Android yang dapat di-root.</li>
+  <li>Kabel USB untuk menghubungkan perangkat ke laptop/komputer.</li>
+  <li>Kuota internet untuk mendukung proses root.</li>
+</ul>
+
+</ul>
+</p>
+</div>
+</div>
+<div class=faq-item onclick=toggleFAQ(this)>
+<div class=faq-question><span>Pertanyaan 7: Apakah saya perlu membawa perangkat ke lokasi?</span><span>&#x25BC;</span></div>
+<div class=faq-answer>
+<p>Ya, layanan <strong>root offline</strong> dapat dilakukan di lokasi manapun sesuai kesepakatan. Kami juga menyediakan
+  layanan antar-lokasi untuk kenyamanan Anda. Namun, biaya perjalanan akan ditanggung oleh pelanggan sesuai dengan jarak
+  lokasi.</p>
+</div>
+</div>
+<div class=faq-item onclick=toggleFAQ(this)>
+<div class=faq-question><span>Pertanyaan 8: Berapa lama waktu yang dibutuhkan untuk proses root offline?</span><span>&#x25BC;</span></div>
+<div class=faq-answer>
+<p>Proses <strong>root offline</strong> biasanya memakan waktu antara <strong>15 hingga 30 menit</strong>, tergantung pada perangkat dan tingkat kesulitan rooting. Kami berusaha untuk memberikan proses yang cepat dan aman agar Anda dapat segera menggunakan perangkat dengan akses penuh.</p>
+</div>
+</div>
+<div class=faq-item onclick=toggleFAQ(this)>
+<div class=faq-question><span>Pertanyaan 9: Apakah root offline dapat merusak perangkat saya?</span><span>&#x25BC;</span></div>
+<div class=faq-answer>
+<p>Rooting perangkat selalu memiliki sedikit risiko jika tidak dilakukan dengan hati-hati. Namun, dengan pengalaman kami dan metode yang tepat, kami mengurangi risiko kerusakan perangkat. Kami juga memberikan penjelasan tentang risiko yang mungkin terjadi sebelum melanjutkan proses rooting, sehingga Anda dapat membuat keputusan yang tepat.</p>
+</div>
+</div>
+<div class=faq-item onclick=toggleFAQ(this)>
+<div class=faq-question><span>Pertanyaan 10: Apakah ada garansi untuk layanan root offline?</span><span>&#x25BC;</span></div>
+<div class=faq-answer>
+<p>Ya, kami memberikan garansi untuk layanan root offline. Jika Anda mengalami masalah setelah proses root, tim kami siap membantu dengan perbaikan tanpa biaya tambahan, selama masih dalam periode garansi.</p>
+</div>
+</div>
+</div>
+
+
+<div class="contact-container p-5">
+  <h2>Kontak Kami</h2>
+  <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+  </div>
+  <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" required />
+  </div>
+  <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4" required></textarea>
+  </div>
+  <button class="submit-btn align-self-center" onclick="sendWhatsApp()">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+          style="width: 20px; height: 20px; margin-right: 10px;">
+      Send to WhatsApp
+  </button>
+</div>
+
+<div class="footer">
+  <div class="social-icons">
+      <a href="https://wa.me/6289515001716" target="_blank" aria-label="WhatsApp">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="30" height="30">
+      </a>
+      <a href="https://t.me/Tech_fix_software" target="_blank" aria-label="Telegram">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" width="24" height="24">
+      </a>
+  </div>
+  <p style="text-shadow: 2px 2px 4px #000;">&copy; 2024 TechFixSoftware. All Rights Reserved.</p>
+</div>
+
+
+
+<script>
+// Mapping layanan ke harga
+const servicePrices = {
+  "Root & Custom Rom": "Rp 100.000",
+  "Jasa UBL & Pasang TWRP":"Rp 80.000",
+  "Jasa Write Imei Android":"Rp 180.000",
+  "Rooting & Custom Rom (Offline)":"Rp 150.000",
+  //eceran
+  "flashing": "Rp 80.000 ",
+  "Pasang TWRP": "Rp 35.000",
+  "Root": "Rp 30.000",
+  "UBL": "Rp 40.000",
+  "Custom ROM": "Rp 80.000"
+};
+
+// Event listener untuk semua dropdown layanan
+document.querySelectorAll(".form-select").forEach(selectElement => {
+  selectElement.addEventListener("change", function () {
+    // Ambil layanan yang dipilih
+    const selectedService = this.value;
+
+    // Cari elemen harga yang terkait dalam modal yang sama
+    const modalBody = this.closest(".modal-body");
+    const priceDisplay = modalBody.querySelector(".price-display");
+
+    if (priceDisplay) {
+      // Perbarui teks harga
+      const price = servicePrices[selectedService] || "Harga tidak tersedia";
+      priceDisplay.textContent = `Harga: ${price}`;
+    }
+  });
+});
+
+// Function to send order via WhatsApp
+function sendOrderViaWhatsApp() {
+    // Get values from the modal form
+    const modal = document.querySelector('.modal.show');  // Get the currently active modal
+    const service = modal.querySelector('#serviceSelect2').value;
+    const customerName = modal.querySelector('input[placeholder="Nama Lengkap"]').value;
+    const deviceName = modal.querySelector('#deviceName2').value;
+    // Your own WhatsApp phone number
+    const yourPhoneNumber = "6289515001716"; // Replace with your WhatsApp phone number (include country code)
+
+    // Check if the required fields are filled
+    if (!service || !deviceName || !customerName) {
+        alert('Silakan isi semua bidang yang diperlukan.');
+        return;
+    }
+
+    // Get the selected price from the servicePrices map
+    const price = servicePrices[service] || "Harga tidak tersedia";
+
+    // Create the message for WhatsApp
+    const message = `*Order Details*\n\n` +
+                    `*Service*: ${service}\n` +
+                    `*Device*: ${deviceName}\n` +
+                    `*Customer*: ${customerName}\n` +
+                    `*Price*: ${price}\n\n` +
+                    `Please confirm the order.`;
+
+    // Encode the message to ensure it's URL-safe
+    const encodedMessage = encodeURIComponent(message);
+
+    // Create the WhatsApp URL (use your own number)
+    const whatsappURL = `https://wa.me/${yourPhoneNumber}?text=${encodedMessage}`;
+
+    // Redirect to WhatsApp (it will open WhatsApp with the pre-filled message)
+    window.open(whatsappURL, '_blank');
+}
+
+
+
+</script>
+
+<script>
+function _0x5a44(){const _0x5794dd=['10Azambe','style','getElementById','innerHTML','7736538ZJpxsD','7HYUoBI','12773115QQaDeQ','display','backgroundColor','13263GpkWgh','<br>','<strong>CUSTOM\x20ROM:</strong>\x20','15YFRBjf','1744490BAkOBb','✅\x20Perangkat\x20ditemukan!','Tersedia\x20✅','textContent','578203RHYXDY','6958192hCqdbK','334SyrTQV','❌\x20Harap\x20masukkan\x20nama\x20perangkat.','block','trim','value','none','<strong>ROOT:</strong>\x20','436408lFjXUG','Tidak\x20Tersedia\x20❌','customROM','#f44336','❌\x20Perangkat\x20tidak\x20ditemukan\x20atau\x20tidak\x20didukung.','toUpperCase'];_0x5a44=function(){return _0x5794dd;};return _0x5a44();}(function(_0x292131,_0x256499){const _0x367008=_0x1d72,_0x4eec7f=_0x292131();while(!![]){try{const _0x5e18fb=-parseInt(_0x367008(0x195))/0x1+-parseInt(_0x367008(0x197))/0x2*(-parseInt(_0x367008(0x18d))/0x3)+parseInt(_0x367008(0x19e))/0x4*(-parseInt(_0x367008(0x190))/0x5)+parseInt(_0x367008(0x188))/0x6*(parseInt(_0x367008(0x189))/0x7)+parseInt(_0x367008(0x196))/0x8+parseInt(_0x367008(0x18a))/0x9*(-parseInt(_0x367008(0x184))/0xa)+parseInt(_0x367008(0x191))/0xb;if(_0x5e18fb===_0x256499)break;else _0x4eec7f['push'](_0x4eec7f['shift']());}catch(_0x4a683f){_0x4eec7f['push'](_0x4eec7f['shift']());}}}(_0x5a44,0xb28d6));function _0x1d72(_0x54d6f5,_0x4d1a73){const _0x5a44cc=_0x5a44();return _0x1d72=function(_0x1d7239,_0x34fd44){_0x1d7239=_0x1d7239-0x184;let _0x4db1ab=_0x5a44cc[_0x1d7239];return _0x4db1ab;},_0x1d72(_0x54d6f5,_0x4d1a73);}const devicesSupport={'REDMINOTE1':{'root':!![],'customROM':!![]},'REDMINOTE2':{'root':!![],'customROM':!![]},'REDMINOTE3PRO':{'root':!![],'customROM':!![]},'REDMINOTE4':{'root':!![],'customROM':!![]},'REDMINOTE4X':{'root':!![],'customROM':!![]},'REDMINOTE5':{'root':!![],'customROM':!![]},'REDMINOTE5PRO':{'root':!![],'customROM':!![]},'REDMINOTE6PRO':{'root':!![],'customROM':!![]},'REDMINOTE7PRO':{'root':!![],'customROM':!![]},'REDMINOTE8PRO':{'root':!![],'customROM':!![]},'REDMINOTE8':{'root':!![],'customROM':!![]},'REDMINOTE9':{'root':!![],'customROM':!![]},'REDMINOTE9PRO':{'root':!![],'customROM':!![]},'REDMINOTE9S':{'root':!![],'customROM':!![]},'REDMINOTE10':{'root':!![],'customROM':!![]},'REDMINOTE10PRO':{'root':!![],'customROM':!![]},'REDMINOTE10S':{'root':!![],'customROM':!![]},'REDMINOTE11':{'root':!![],'customROM':!![]},'REDMINOTE11PRO':{'root':!![],'customROM':!![]},'REDMINOTE11S':{'root':!![],'customROM':!![]},'REDMINOTE12':{'root':!![],'customROM':!![]},'REDMINOTE12PRO':{'root':!![],'customROM':!![]},'REDMI1S':{'root':!![],'customROM':!![]},'REDMI2':{'root':!![],'customROM':!![]},'REDMI2PRIME':{'root':!![],'customROM':!![]},'REDMI3S':{'root':!![],'customROM':!![]},'REDMI3SPRIME':{'root':!![],'customROM':!![]},'REDMI4A':{'root':!![],'customROM':!![]},'REDMI4X':{'root':!![],'customROM':!![]},'REDMI5':{'root':!![],'customROM':!![]},'REDMI5A':{'root':!![],'customROM':!![]},'REDMI6A':{'root':!![],'customROM':!![]},'REDMI6PRO':{'root':!![],'customROM':!![]},'REDMI7':{'root':!![],'customROM':!![]},'REDMI8':{'root':!![],'customROM':!![]},'REDMI8A':{'root':!![],'customROM':!![]},'REDMI9':{'root':!![],'customROM':!![]},'REDMI9A':{'root':!![],'customROM':!![]},'REDMI9C':{'root':!![],'customROM':!![]},'REDMI9':{'root':!![],'customROM':!![]},'REDMI10':{'root':!![],'customROM':!![]},'POCOF1':{'root':!![],'customROM':!![]},'POCOF2PRO':{'root':!![],'customROM':!![]},'POCOF3':{'root':!![],'customROM':!![]},'POCOX2':{'root':!![],'customROM':!![]},'POCOX3NFC':{'root':!![],'customROM':!![]},'POCOX3PRO':{'root':!![],'customROM':!![]},'POCOM2':{'root':!![],'customROM':!![]},'POCOM2PRO':{'root':!![],'customROM':!![]},'POCOM3':{'root':!![],'customROM':!![]},'POCOM4':{'root':!![],'customROM':!![]},'POCOM4PRO':{'root':!![],'customROM':!![]},'POCOC3':{'root':!![],'customROM':!![]},'POCOC31':{'root':!![],'customROM':!![]},'POCOX55G':{'root':!![],'customROM':!![]},'INFINIXGT10PRO':{'root':!![],'customROM':!![]},'INFINIXHOT11':{'root':!![],'customROM':!![]},'INFINIXNOTE30':{'root':!![],'customROM':!![]},'INFINIXNOTE40':{'root':!![],'customROM':!![]},'XIAOMIMI3':{'root':!![],'customROM':!![]},'XIAOMIMI4':{'root':!![],'customROM':!![]},'XIAOMIMI4I':{'root':!![],'customROM':!![]},'XIAOMIMI5':{'root':!![],'customROM':!![]},'XIAOMIMI5S':{'root':!![],'customROM':!![]},'XIAOMIMI5SPLUS':{'root':!![],'customROM':!![]},'XIAOMIMI6':{'root':!![],'customROM':!![]},'XIAOMIMI6X':{'root':!![],'customROM':!![]},'XIAOMIMI8':{'root':!![],'customROM':!![]},'XIAOMIMI8LITE':{'root':!![],'customROM':!![]},'XIAOMIMI9':{'root':!![],'customROM':!![]},'XIAOMIMI9T':{'root':!![],'customROM':!![]},'XIAOMIMI9TPRO':{'root':!![],'customROM':!![]},'XIAOMIMI10':{'root':!![],'customROM':!![]},'XIAOMIMI10TPRO':{'root':!![],'customROM':!![]},'XIAOMIMIA1':{'root':!![],'customROM':!![]},'XIAOMIMIA2':{'root':!![],'customROM':!![]},'XIAOMIMIMIX':{'root':!![],'customROM':!![]},'XIAOMIMIMIX2':{'root':!![],'customROM':!![]},'XIAOMIMIMIX2S':{'root':!![],'customROM':!![]},'XIAOMIMIMIX3':{'root':!![],'customROM':!![]},'XIAOMIMIMAX':{'root':!![],'customROM':!![]},'XIAOMIMIMAX2':{'root':!![],'customROM':!![]},'XIAOMIMIMAX3':{'root':!![],'customROM':!![]},'XIAOMIMINOTE':{'root':!![],'customROM':!![]},'XIAOMIMINOTE2':{'root':!![],'customROM':!![]},'XIAOMIMINOTE3':{'root':!![],'customROM':!![]},'BLACKSHARK':{'root':!![],'customROM':!![]},'BLACKSHARK2':{'root':!![],'customROM':!![]},'BLACKSHARK2PRO':{'root':!![],'customROM':!![]},'REALME3':{'root':!![],'customROM':!![]},'REALME5PRO':{'root':!![],'customROM':!![]},'REALME6':{'root':!![],'customROM':!![]},'REALME6PRO':{'root':!![],'customROM':!![]},'REALME7':{'root':!![],'customROM':!![]},'REALME7PRO':{'root':!![],'customROM':!![]},'REALME8I':{'root':!![],'customROM':!![]},'REALMENARZO10':{'root':!![],'customROM':!![]},'REALMENARZO20':{'root':!![],'customROM':!![]},'REALMEC25':{'root':!![],'customROM':!![]},'ONEPLUSONE':{'root':!![],'customROM':!![]},'ONEPLUS2':{'root':!![],'customROM':!![]},'ONEPLUSX':{'root':!![],'customROM':!![]},'ONEPLUS3':{'root':!![],'customROM':!![]},'ONEPLUS3T':{'root':!![],'customROM':!![]},'SAMSUNGGALAXYS9':{'root':!![],'customROM':![]},'SAMSUNGGALAXYS9+':{'root':!![],'customROM':![]},'SAMSUNGGALAXYS10':{'root':!![],'customROM':![]},'SAMSUNGGALAXYS10+':{'root':!![],'customROM':![]},'SAMSUNGGALAXYS20':{'root':!![],'customROM':![]},'SAMSUNGGALAXYS20+':{'root':!![],'customROM':![]},'SAMSUNGGALAXYS21':{'root':!![],'customROM':![]},'SAMSUNGGALAXYNOTE8':{'root':!![],'customROM':![]},'SAMSUNGGALAXYNOTE9':{'root':!![],'customROM':![]},'SAMSUNGGALAXYNOTE10':{'root':!![],'customROM':![]},'SAMSUNGGALAXYNOTE10+':{'root':!![],'customROM':![]},'SAMSUNGGALAXYA50':{'root':!![],'customROM':![]},'SAMSUNGGALAXYA70':{'root':!![],'customROM':![]},'VIVOY91C':{'root':!![],'customROM':![]},'VIVOY12':{'root':!![],'customROM':![]},'VIVOY15':{'root':!![],'customROM':![]},'VIVOY17':{'root':!![],'customROM':![]},'VIVOY20':{'root':!![],'customROM':![]},'VIVOY30':{'root':!![],'customROM':![]},'VIVOV15':{'root':!![],'customROM':![]},'VIVOV17NEO':{'root':!![],'customROM':![]},'VIVOS1':{'root':!![],'customROM':![]},'VIVOS1_PRO':{'root':!![],'customROM':![]}};function checkDeviceSupport(){const _0x2b313f=_0x1d72;let _0x450cf1=document[_0x2b313f(0x186)]('deviceInput')[_0x2b313f(0x19b)][_0x2b313f(0x19a)]()[_0x2b313f(0x1a3)](),_0x3fdb1c=document[_0x2b313f(0x186)]('notification'),_0xe32d=document[_0x2b313f(0x186)]('result');_0xe32d['innerHTML']='',_0x3fdb1c['style'][_0x2b313f(0x18b)]=_0x2b313f(0x19c);if(!_0x450cf1){showNotification(_0x2b313f(0x198),_0x2b313f(0x1a1));return;}let _0x402114=devicesSupport[_0x450cf1];if(_0x402114){showNotification(_0x2b313f(0x192),'#4CAF50');let _0x262a3d=_0x2b313f(0x19d)+(_0x402114['root']?_0x2b313f(0x193):_0x2b313f(0x19f))+_0x2b313f(0x18e);_0x262a3d+=_0x2b313f(0x18f)+(_0x402114[_0x2b313f(0x1a0)]?_0x2b313f(0x193):_0x2b313f(0x19f)),_0xe32d[_0x2b313f(0x187)]=_0x262a3d;}else showNotification(_0x2b313f(0x1a2),_0x2b313f(0x1a1));}function showNotification(_0x13de5c,_0x21cea8){const _0x50ff4a=_0x1d72;let _0x282e07=document[_0x50ff4a(0x186)]('notification');_0x282e07[_0x50ff4a(0x185)][_0x50ff4a(0x18b)]=_0x50ff4a(0x199),_0x282e07[_0x50ff4a(0x185)][_0x50ff4a(0x18c)]=_0x21cea8,_0x282e07[_0x50ff4a(0x194)]=_0x13de5c,setTimeout(()=>{const _0x5ed698=_0x50ff4a;_0x282e07[_0x5ed698(0x185)][_0x5ed698(0x18b)]=_0x5ed698(0x19c);},0xbb8);}
+
+
+
+</script>
+
+
+  <script src="assets/js/script.js" async ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" async></script>
+</body>
+</html>
